@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{10636DEE-CAF6-4BB2-9838-FF2F7A42CFF0}</ProjectGuid>
+    <ProjectGuid>{C1448FE4-9AC7-4DF8-B6AE-D22341865FF1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Bootcamp.CRUD</RootNamespace>
@@ -53,16 +53,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\MyContext.cs" />
+    <Compile Include="Controller\ItemsController.cs" />
+    <Compile Include="Controller\SuppliersController.cs" />
     <Compile Include="Core\BaseModel.cs" />
-    <Compile Include="Migrations\201901230750246_addingModelFirst.cs" />
-    <Compile Include="Migrations\201901230750246_addingModelFirst.Designer.cs">
-      <DependentUpon>201901230750246_addingModelFirst.cs</DependentUpon>
+    <Compile Include="Migrations\201901240153487_addingTable.cs" />
+    <Compile Include="Migrations\201901240153487_addingTable.Designer.cs">
+      <DependentUpon>201901240153487_addingTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201901231008165_addingDeleteStatus.cs" />
-    <Compile Include="Migrations\201901231008165_addingDeleteStatus.Designer.cs">
-      <DependentUpon>201901231008165_addingDeleteStatus.cs</DependentUpon>
+    <Compile Include="Migrations\201901240309049_addingInsertItems.cs" />
+    <Compile Include="Migrations\201901240309049_addingInsertItems.Designer.cs">
+      <DependentUpon>201901240309049_addingInsertItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901240336590_addingUpdateItems.cs" />
+    <Compile Include="Migrations\201901240336590_addingUpdateItems.Designer.cs">
+      <DependentUpon>201901240336590_addingUpdateItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901240341509_addingUpItems.cs" />
+    <Compile Include="Migrations\201901240341509_addingUpItems.Designer.cs">
+      <DependentUpon>201901240341509_addingUpItems.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Item.cs" />
     <Compile Include="Model\Supplier.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,11 +83,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201901230750246_addingModelFirst.resx">
-      <DependentUpon>201901230750246_addingModelFirst.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201901240153487_addingTable.resx">
+      <DependentUpon>201901240153487_addingTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901231008165_addingDeleteStatus.resx">
-      <DependentUpon>201901231008165_addingDeleteStatus.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201901240309049_addingInsertItems.resx">
+      <DependentUpon>201901240309049_addingInsertItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901240336590_addingUpdateItems.resx">
+      <DependentUpon>201901240336590_addingUpdateItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901240341509_addingUpItems.resx">
+      <DependentUpon>201901240341509_addingUpItems.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
