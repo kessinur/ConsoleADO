@@ -55,26 +55,29 @@
     <Compile Include="Context\MyContext.cs" />
     <Compile Include="Controller\ItemsController.cs" />
     <Compile Include="Controller\SuppliersController.cs" />
+    <Compile Include="Controller\TransactionsController.cs" />
     <Compile Include="Core\BaseModel.cs" />
-    <Compile Include="Migrations\201901240153487_addingTable.cs" />
-    <Compile Include="Migrations\201901240153487_addingTable.Designer.cs">
-      <DependentUpon>201901240153487_addingTable.cs</DependentUpon>
+    <Compile Include="Migrations\201901240630434_isaddingTransactionTable.cs" />
+    <Compile Include="Migrations\201901240630434_isaddingTransactionTable.Designer.cs">
+      <DependentUpon>201901240630434_isaddingTransactionTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201901240309049_addingInsertItems.cs" />
-    <Compile Include="Migrations\201901240309049_addingInsertItems.Designer.cs">
-      <DependentUpon>201901240309049_addingInsertItems.cs</DependentUpon>
+    <Compile Include="Migrations\201901240723537_isaddingTransaction.cs" />
+    <Compile Include="Migrations\201901240723537_isaddingTransaction.Designer.cs">
+      <DependentUpon>201901240723537_isaddingTransaction.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201901240336590_addingUpdateItems.cs" />
-    <Compile Include="Migrations\201901240336590_addingUpdateItems.Designer.cs">
-      <DependentUpon>201901240336590_addingUpdateItems.cs</DependentUpon>
+    <Compile Include="Migrations\201901240936591_isaddingTransact.cs" />
+    <Compile Include="Migrations\201901240936591_isaddingTransact.Designer.cs">
+      <DependentUpon>201901240936591_isaddingTransact.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201901240341509_addingUpItems.cs" />
-    <Compile Include="Migrations\201901240341509_addingUpItems.Designer.cs">
-      <DependentUpon>201901240341509_addingUpItems.cs</DependentUpon>
+    <Compile Include="Migrations\201901241003175_isaddingTransact1.cs" />
+    <Compile Include="Migrations\201901241003175_isaddingTransact1.Designer.cs">
+      <DependentUpon>201901241003175_isaddingTransact1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\Supplier.cs" />
+    <Compile Include="Model\TransactionItem.cs" />
+    <Compile Include="Model\Transaction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -83,18 +86,21 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201901240153487_addingTable.resx">
-      <DependentUpon>201901240153487_addingTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201901240630434_isaddingTransactionTable.resx">
+      <DependentUpon>201901240630434_isaddingTransactionTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901240309049_addingInsertItems.resx">
-      <DependentUpon>201901240309049_addingInsertItems.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201901240723537_isaddingTransaction.resx">
+      <DependentUpon>201901240723537_isaddingTransaction.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901240336590_addingUpdateItems.resx">
-      <DependentUpon>201901240336590_addingUpdateItems.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201901240936591_isaddingTransact.resx">
+      <DependentUpon>201901240936591_isaddingTransact.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901240341509_addingUpItems.resx">
-      <DependentUpon>201901240341509_addingUpItems.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201901241003175_isaddingTransact1.resx">
+      <DependentUpon>201901241003175_isaddingTransact1.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Folder\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
